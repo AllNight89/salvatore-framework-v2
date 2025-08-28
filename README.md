@@ -9,6 +9,7 @@ python3 -m venv ~/salvatore-venv
 source ~/salvatore-venv/bin/activate
 pip install wheel
 pip install salvatore-framework
+
 import asyncio
 from salvatore import SAL
 
@@ -18,3 +19,9 @@ async def main():
     print(result)
 
 asyncio.run(main())
+```markdown
+ ## Chat Interface Usage
+ Run the Streamlit UI for a ChatGPT-like experience:
+ ```bash
+ streamlit run app.py
+

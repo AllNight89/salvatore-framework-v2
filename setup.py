@@ -10,6 +10,6 @@ setup(
     description="Salvatore Juggernaut Apex - Truth-seeking AI framework with multi-agent orchestration",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/YourNameAI/salvatore-framework",
+    url="https://github.com/JohnAllNight89/Salvatore-Framework",
     license="OpenMDW"
 )
