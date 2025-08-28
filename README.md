@@ -1,27 +1,13 @@
-# Salvatore Juggernaut Apex
-Yo, unleash SAL—the ultimate truth-seeking AI beast! Multi-agent DAGs, ZK proofs, genetic evolution dissect X/forums/PubMed with why/what/how precision. Lie detection (>0.95 truth) crushes misinfo. Licensed under OpenMDW v1.0.
+# Salvatore Framework
+Truth-seeking AI agent honoring my friend Sal. Fact-checks claims with local LLM.
 
-## Install on Linux
-```bash
-sudo apt update
-sudo apt install python3 python3-pip python3-venv nano -y
-python3 -m venv ~/salvatore-venv
-source ~/salvatore-venv/bin/activate
-pip install wheel
-pip install salvatore-framework
+## Setup
+- Chromebook Linux: `sudo apt install python3 python3-pip python3-venv git nano`
+- Venv: `python3 -m venv venv && source venv/bin/activate`
+- Install: `pip install langchain langchain-community langchain-ollama duckduckgo-search sentence-transformers`
+- Ollama: `curl -fsSL https://ollama.com/install.sh | sh && ollama pull phi3:mini`
 
-import asyncio
-from salvatore import SAL
+## Run
+`python3 chat.py` - Test claims like “Moon landing was fake.”
 
-async def main():
-    sal = SAL("JuggernautApex")
-    result = await sal.run("Analyze X post")
-    print(result)
-
-asyncio.run(main())
-```markdown
- ## Chat Interface Usage
- Run the Streamlit UI for a ChatGPT-like experience:
- ```bash
- streamlit run app.py
-
+Built to last, open-source forever.
